@@ -1,7 +1,22 @@
 @charset "utf-8";
-.bottons{
+
+.bottons {
     display: flex;
 }
-.error{
+
+.error {
     color: red;
+}
+
+.task_list1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task_list2 {
+    display: flex;
+}
+
+.task_list3{
+    padding-right: 5px;
 }

@@ -20,11 +20,11 @@
         @csrf
         @method('patch')
         <div>
-            <label for="title">論文タイトル</label>
+            <label for="title">論文タイトル</label><br>
             <input type="text" name="title" id="title" value="{{ old("title", $task->title) }}">
         </div>
         <div>
-            <label for="body">本文</label>
+            <label for="body">本文</label><br>
             <textarea name="body" id="body" cols="30" rows="10">{{ old("body", $task->body) }}</textarea>
         </div>
         <div>

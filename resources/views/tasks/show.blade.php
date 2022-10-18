@@ -5,11 +5,11 @@
 
     <form>
         <div>
-            <label for="title">【タイトル】</label>
+            <label for="title">【タイトル】</label><br>
             <input type="text" title="title id="title" value="{{ $task->title }}" readonly>
         </div>
         <div>
-            <label for="body">【内容】</label>
+            <label for="body">【内容】</label><br>
             <textarea name="boyd" id="body" cols="30" rows="10" readonly>{{ $task->body }}</textarea>
         </div>
     </form>
