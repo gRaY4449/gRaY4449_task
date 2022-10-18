@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('tasks', App\Http\Controllers\TaskController::class);
+// リソースを使用しない場合
+// Please change memo into task!!!!!!!!
+// Route::get('/memos', [App\Http\Controllers\TaskController::class, 'index']);
+// Route::get('/memos/create', [App\Http\Controllers\TaskController::class, 'create']);
+// Route::post('/memos', [App\Http\Controllers\TaskController::class, 'store']);
+// Route::get('/memos/{memo}', [App\Http\Controllers\TaskController::class, 'show']);
+// Route::get('/memos/{memo}/edit', [App\Http\Controllers\TaskController::class, 'edit']);
+// Route::patch('/memos/{memo}', [App\Http\Controllers\TaskController::class, 'update']);
+// Route::delete('/memos/{memo}', [App\Http\Controllers\TaskController::class, 'destroy']);
