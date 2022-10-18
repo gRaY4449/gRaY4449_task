@@ -15,7 +15,7 @@
             </ul>
         </div>
     @endif
-    
+
     <form action="{{ route('tasks.update', $task) }}" method="post">
         @csrf
         @method('patch')
@@ -27,8 +27,11 @@
             <label for="body">本文</label><br>
             <textarea name="body" id="body" cols="30" rows="10">{{ old("body", $task->body) }}</textarea>
         </div>
-        <div>
-            <input type="submit" value="修正">
-        </div>
+        <div class="bottons">
+            <input type="submit" value="更新">
     </form>
+            <form action="{{ route('tasks.show', $task) }}">
+                <button type="submit">詳細へ戻る</button>
+            </form>
+        </div>
 @endsection
